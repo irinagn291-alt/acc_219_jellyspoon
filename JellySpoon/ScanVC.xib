@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.00" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScanVC" customModule="JellySpoon" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="root" id="oview"/>
+                <outlet property="preview" destination="prev" id="opreview"/>
+                <outlet property="codeField" destination="code" id="ocodeField"/>
+                <outlet property="goBtn" destination="gob" id="ogoBtn"/>
+                <outlet property="hintLbl" destination="hint" id="ohintLbl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="root">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="prev">
+                    <rect key="frame" x="16" y="80" width="358" height="280"/>
+                    <color key="backgroundColor" white="0" alpha="0.85" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="EAN" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="code">
+                    <rect key="frame" x="20" y="200" width="350" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="56" id="codeh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gob">
+                    <rect key="frame" x="20" y="700" width="160" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="56" id="gobh"/>
+                    </constraints>
+                    <state key="normal" title="Use"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hint" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hint">
+                    <rect key="frame" x="20" y="80" width="350" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="safe"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+
+                <constraint firstItem="prev" firstAttribute="top" secondItem="safe" secondAttribute="top" constant="8" id="n1"/>
+                <constraint firstItem="prev" firstAttribute="leading" secondItem="safe" secondAttribute="leading" constant="16" id="n2"/>
+                <constraint firstItem="safe" firstAttribute="trailing" secondItem="prev" secondAttribute="trailing" constant="16" id="n3"/>
+                <constraint firstItem="prev" firstAttribute="height" constant="220" id="n4"/>
+                <constraint firstItem="hint" firstAttribute="top" secondItem="prev" secondAttribute="bottom" constant="10" id="n5"/>
+                <constraint firstItem="hint" firstAttribute="leading" secondItem="prev" secondAttribute="leading" id="n6"/>
+                <constraint firstItem="hint" firstAttribute="trailing" secondItem="prev" secondAttribute="trailing" id="n7"/>
+                <constraint firstItem="code" firstAttribute="top" secondItem="hint" secondAttribute="bottom" constant="10" id="n8"/>
+                <constraint firstItem="code" firstAttribute="leading" secondItem="prev" secondAttribute="leading" id="n9"/>
+                <constraint firstItem="code" firstAttribute="trailing" secondItem="prev" secondAttribute="trailing" id="n10"/>
+                <constraint firstItem="gob" firstAttribute="top" secondItem="code" secondAttribute="bottom" constant="12" id="n11"/>
+                <constraint firstItem="gob" firstAttribute="leading" secondItem="prev" secondAttribute="leading" id="n12"/>
+                <constraint firstItem="gob" firstAttribute="trailing" secondItem="prev" secondAttribute="trailing" id="n13"/>
+
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

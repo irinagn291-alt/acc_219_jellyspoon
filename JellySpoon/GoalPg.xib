@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.00" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GoalPg" customModule="JellySpoon" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="root" id="oview"/>
+                <outlet property="titleLbl" destination="ttl" id="otitleLbl"/>
+                <outlet property="kcalField" destination="kf" id="okcalField"/>
+                <outlet property="protField" destination="pf" id="oprotField"/>
+                <outlet property="carbField" destination="cf" id="ocarbField"/>
+                <outlet property="fatField" destination="ff" id="ofatField"/>
+                <outlet property="saveBtn" destination="sav" id="osaveBtn"/>
+                <outlet property="contrastSw" destination="sw" id="ocontrastSw"/>
+                <outlet property="contrastLbl" destination="cl" id="ocontrastLbl"/>
+                <outlet property="hintLbl" destination="hint" id="ohintLbl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="root">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="sc">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="body">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="620"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aims" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="1" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="ttl">
+                                    <rect key="frame" x="16" y="8" width="358" height="32"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories" textAlignment="natural" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcap">
+                                    <rect key="frame" x="16" y="48" width="358" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <color key="textColor" red="0.22" green="0.1" blue="0.2" alpha="0.6" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="kcal" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kf">
+                                    <rect key="frame" x="16" y="70" width="358" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="kfh"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Protein, g" textAlignment="natural" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcap">
+                                    <rect key="frame" x="16" y="126" width="358" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <color key="textColor" red="0.22" green="0.1" blue="0.2" alpha="0.6" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="protein" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pf">
+                                    <rect key="frame" x="16" y="148" width="358" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="pfh"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carbs, g" textAlignment="natural" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccap">
+                                    <rect key="frame" x="16" y="204" width="358" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <color key="textColor" red="0.22" green="0.1" blue="0.2" alpha="0.6" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="carbs" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cf">
+                                    <rect key="frame" x="16" y="226" width="358" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="cfh"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fat, g" textAlignment="natural" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcap">
+                                    <rect key="frame" x="16" y="282" width="358" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <color key="textColor" red="0.22" green="0.1" blue="0.2" alpha="0.6" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="fat" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ff">
+                                    <rect key="frame" x="16" y="304" width="358" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="ffh"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sav">
+                                    <rect key="frame" x="16" y="368" width="358" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="savh"/>
+                                    </constraints>
+                                    <state key="normal" title="Save"/>
+                                </button>
+                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sw">
+                                    <rect key="frame" x="16" y="432" width="51" height="31"/>
+                                </switch>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High contrast kitchen" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="cl">
+                                    <rect key="frame" x="79" y="428" width="295" height="40"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hint" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="hint">
+                                    <rect key="frame" x="16" y="480" width="358" height="20"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="ttl" firstAttribute="top" secondItem="body" secondAttribute="top" constant="8" id="g1"/>
+                                <constraint firstItem="ttl" firstAttribute="leading" secondItem="body" secondAttribute="leading" constant="16" id="g2"/>
+                                <constraint firstAttribute="trailing" secondItem="ttl" secondAttribute="trailing" constant="16" id="g3"/>
+                                <constraint firstItem="kcap" firstAttribute="top" secondItem="ttl" secondAttribute="bottom" constant="12" id="g4"/>
+                                <constraint firstItem="kcap" firstAttribute="leading" secondItem="ttl" secondAttribute="leading" id="g5"/>
+                                <constraint firstItem="kcap" firstAttribute="trailing" secondItem="ttl" secondAttribute="trailing" id="g6"/>
+                                <constraint firstItem="kf" firstAttribute="top" secondItem="kcap" secondAttribute="bottom" constant="4" id="g7"/>
+                                <constraint firstItem="kf" firstAttribute="leading" secondItem="ttl" secondAttribute="leading" id="g8"/>
+                                <constraint firstItem="kf" firstAttribute="trailing" secondItem="ttl" secondAttribute="trailing" id="g9"/>
+                                <constraint firstItem="pcap" firstAttribute="top" secondItem="kf" secondAttribute="bottom" constant="10" id="g10"/>
+                                <constraint firstItem="pcap" firstAttribute="leading" secondItem="ttl" secondAttribute="leading" id="g11"/>
+                                <constraint firstItem="pcap" firstAttribute="trailing" secondItem="ttl" secondAttribute="trailing" id="g12"/>
+                                <constraint firstItem="pf" firstAttribute="top" secondItem="pcap" secondAttribute="bottom" constant="4" id="g13"/>
+                                <constraint firstItem="pf" firstAttribute="leading" secondItem="ttl" secondAttribute="leading" id="g14"/>
+                                <constraint firstItem="pf" firstAttribute="trailing" secondItem="ttl" secondAttribute="trailing" id="g15"/>
+                                <constraint firstItem="ccap" firstAttribute="top" secondItem="pf" secondAttribute="bottom" constant="10" id="g16"/>
+                                <constraint firstItem="ccap" firstAttribute="leading" secondItem="ttl" secondAttribute="leading" id="g17"/>
+                                <constraint firstItem="ccap" firstAttribute="trailing" secondItem="ttl" secondAttribute="trailing" id="g18"/>
+                                <constraint firstItem="cf" firstAttribute="top" secondItem="ccap" secondAttribute="bottom" constant="4" id="g19"/>
+                                <constraint firstItem="cf" firstAttribute="leading" secondItem="ttl" secondAttribute="leading" id="g20"/>
+                                <constraint firstItem="cf" firstAttribute="trailing" secondItem="ttl" secondAttribute="trailing" id="g21"/>
+                                <constraint firstItem="fcap" firstAttribute="top" secondItem="cf" secondAttribute="bottom" constant="10" id="g22"/>
+                                <constraint firstItem="fcap" firstAttribute="leading" secondItem="ttl" secondAttribute="leading" id="g23"/>
+                                <constraint firstItem="fcap" firstAttribute="trailing" secondItem="ttl" secondAttribute="trailing" id="g24"/>
+                                <constraint firstItem="ff" firstAttribute="top" secondItem="fcap" secondAttribute="bottom" constant="4" id="g25"/>
+                                <constraint firstItem="ff" firstAttribute="leading" secondItem="ttl" secondAttribute="leading" id="g26"/>
+                                <constraint firstItem="ff" firstAttribute="trailing" secondItem="ttl" secondAttribute="trailing" id="g27"/>
+                                <constraint firstItem="sav" firstAttribute="top" secondItem="ff" secondAttribute="bottom" constant="16" id="g28"/>
+                                <constraint firstItem="sav" firstAttribute="leading" secondItem="ttl" secondAttribute="leading" id="g29"/>
+                                <constraint firstItem="sav" firstAttribute="trailing" secondItem="ttl" secondAttribute="trailing" id="g30"/>
+                                <constraint firstItem="sw" firstAttribute="leading" secondItem="ttl" secondAttribute="leading" id="g31"/>
+                                <constraint firstItem="sw" firstAttribute="top" secondItem="sav" secondAttribute="bottom" constant="16" id="g32"/>
+                                <constraint firstItem="cl" firstAttribute="centerY" secondItem="sw" secondAttribute="centerY" id="g33"/>
+                                <constraint firstItem="cl" firstAttribute="leading" secondItem="sw" secondAttribute="trailing" constant="12" id="g34"/>
+                                <constraint firstItem="cl" firstAttribute="trailing" secondItem="ttl" secondAttribute="trailing" id="g35"/>
+                                <constraint firstItem="hint" firstAttribute="top" secondItem="sw" secondAttribute="bottom" constant="14" id="g36"/>
+                                <constraint firstItem="hint" firstAttribute="leading" secondItem="ttl" secondAttribute="leading" id="g37"/>
+                                <constraint firstItem="hint" firstAttribute="trailing" secondItem="ttl" secondAttribute="trailing" id="g38"/>
+                                <constraint firstAttribute="bottom" secondItem="hint" secondAttribute="bottom" constant="16" id="g39"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <viewLayoutGuide key="contentLayoutGuide" id="scC"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="scF"/>
+                    <constraints>
+                        <constraint firstItem="body" firstAttribute="top" secondItem="scC" secondAttribute="top" id="s1"/>
+                        <constraint firstItem="body" firstAttribute="leading" secondItem="scC" secondAttribute="leading" id="s2"/>
+                        <constraint firstItem="body" firstAttribute="trailing" secondItem="scC" secondAttribute="trailing" id="s3"/>
+                        <constraint firstItem="body" firstAttribute="bottom" secondItem="scC" secondAttribute="bottom" id="s4"/>
+                        <constraint firstItem="body" firstAttribute="width" secondItem="scF" secondAttribute="width" id="s5"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="safe"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="sc" firstAttribute="top" secondItem="safe" secondAttribute="top" id="r1"/>
+                <constraint firstItem="sc" firstAttribute="leading" secondItem="root" secondAttribute="leading" id="r2"/>
+                <constraint firstItem="sc" firstAttribute="trailing" secondItem="root" secondAttribute="trailing" id="r3"/>
+                <constraint firstItem="sc" firstAttribute="bottom" secondItem="safe" secondAttribute="bottom" id="r4"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

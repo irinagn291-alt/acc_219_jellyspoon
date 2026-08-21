@@ -1,0 +1,22 @@
+{
+  "images": [
+    {
+      "filename": "ChromeBtn.png",
+      "idiom": "universal",
+      "scale": "1x"
+    },
+    {
+      "idiom": "universal",
+      "scale": "2x"
+    },
+    {
+      "idiom": "universal",
+      "scale": "3x"
+    }
+  ],
+  "info": {
+    "author": "xcode",
+    "version": 1,
+    "comment": "Watercolor children's picture-book illustration, soft bleeding edges, bright saturated. A glossy candy oval button, strawberry jelly red with a shiny highlight, chunky cartoon UI chrome, isolated on transparent-feeling cream wash. No text, no letters, no watermark."
+  }
+}

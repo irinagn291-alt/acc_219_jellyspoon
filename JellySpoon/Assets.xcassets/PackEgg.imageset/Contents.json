@@ -1,0 +1,22 @@
+{
+  "images": [
+    {
+      "filename": "PackEgg.png",
+      "idiom": "universal",
+      "scale": "1x"
+    },
+    {
+      "idiom": "universal",
+      "scale": "2x"
+    },
+    {
+      "idiom": "universal",
+      "scale": "3x"
+    }
+  ],
+  "info": {
+    "author": "xcode",
+    "version": 1,
+    "comment": "Watercolor children's picture-book illustration, soft bleeding edges, bright saturated. Two sunny-side-up eggs with cartoon smiles on a teal plate, tiny jelly dots of ketchup, breakfast portrait. No text, no letters, no watermark."
+  }
+}

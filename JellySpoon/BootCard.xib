@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.00" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BootCard" customModule="JellySpoon" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="root" id="oview"/>
+                <outlet property="art" destination="art" id="oart"/>
+                <outlet property="titleLbl" destination="ttl" id="otitleLbl"/>
+                <outlet property="bodyLbl" destination="bdy" id="obodyLbl"/>
+                <outlet property="doneBtn" destination="don" id="odoneBtn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="root">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="art">
+                    <rect key="frame" x="24" y="80" width="342" height="280"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="280" id="arth"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="ttl">
+                    <rect key="frame" x="24" y="376" width="342" height="32"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Body" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="bdy">
+                    <rect key="frame" x="24" y="416" width="342" height="60"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="don">
+                    <rect key="frame" x="24" y="740" width="342" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="donh"/>
+                    </constraints>
+                    <state key="normal" title="Open"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="safe"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="art" firstAttribute="top" secondItem="safe" secondAttribute="top" constant="12" id="c1"/>
+                <constraint firstItem="art" firstAttribute="leading" secondItem="safe" secondAttribute="leading" constant="24" id="c2"/>
+                <constraint firstItem="safe" firstAttribute="trailing" secondItem="art" secondAttribute="trailing" constant="24" id="c3"/>
+                <constraint firstItem="ttl" firstAttribute="top" secondItem="art" secondAttribute="bottom" constant="18" id="c5"/>
+                <constraint firstItem="ttl" firstAttribute="leading" secondItem="art" secondAttribute="leading" id="c6"/>
+                <constraint firstItem="ttl" firstAttribute="trailing" secondItem="art" secondAttribute="trailing" id="c7"/>
+                <constraint firstItem="bdy" firstAttribute="top" secondItem="ttl" secondAttribute="bottom" constant="8" id="c8"/>
+                <constraint firstItem="bdy" firstAttribute="leading" secondItem="ttl" secondAttribute="leading" id="c9"/>
+                <constraint firstItem="bdy" firstAttribute="trailing" secondItem="ttl" secondAttribute="trailing" id="c10"/>
+                <constraint firstItem="don" firstAttribute="leading" secondItem="art" secondAttribute="leading" id="c11"/>
+                <constraint firstItem="don" firstAttribute="trailing" secondItem="art" secondAttribute="trailing" id="c12"/>
+                <constraint firstItem="safe" firstAttribute="bottom" secondItem="don" secondAttribute="bottom" constant="8" id="c13"/>
+                <constraint firstItem="bdy" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="don" secondAttribute="top" constant="-12" id="c14"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

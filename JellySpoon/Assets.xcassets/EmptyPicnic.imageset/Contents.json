@@ -1,0 +1,22 @@
+{
+  "images": [
+    {
+      "filename": "EmptyPicnic.png",
+      "idiom": "universal",
+      "scale": "1x"
+    },
+    {
+      "idiom": "universal",
+      "scale": "2x"
+    },
+    {
+      "idiom": "universal",
+      "scale": "3x"
+    }
+  ],
+  "info": {
+    "author": "xcode",
+    "version": 1,
+    "comment": "Watercolor children's picture-book illustration, soft bleeding edges, bright saturated. An empty gingham picnic blanket under a candy-colored tree, waiting basket outline made of dashed jelly, butterflies. No text, no letters, no watermark."
+  }
+}

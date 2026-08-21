@@ -1,0 +1,22 @@
+{
+  "images": [
+    {
+      "filename": "SlotSupper.png",
+      "idiom": "universal",
+      "scale": "1x"
+    },
+    {
+      "idiom": "universal",
+      "scale": "2x"
+    },
+    {
+      "idiom": "universal",
+      "scale": "3x"
+    }
+  ],
+  "info": {
+    "author": "xcode",
+    "version": 1,
+    "comment": "Watercolor children's picture-book illustration, soft bleeding edges, bright saturated. A bubbling supper pot with carrots and steam curls, evening indigo window, wooden spoon stirring jelly-gloss broth. No text, no letters, no watermark."
+  }
+}

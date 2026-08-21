@@ -1,0 +1,22 @@
+{
+  "images": [
+    {
+      "filename": "PackCheese.png",
+      "idiom": "universal",
+      "scale": "1x"
+    },
+    {
+      "idiom": "universal",
+      "scale": "2x"
+    },
+    {
+      "idiom": "universal",
+      "scale": "3x"
+    }
+  ],
+  "info": {
+    "author": "xcode",
+    "version": 1,
+    "comment": "Watercolor children's picture-book illustration, soft bleeding edges, bright saturated. A wedge of picnic cheese with holes like a friendly face, yellow-orange rind, grass crumbs. No text, no letters, no watermark."
+  }
+}

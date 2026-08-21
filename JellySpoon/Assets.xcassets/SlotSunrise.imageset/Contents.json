@@ -1,0 +1,22 @@
+{
+  "images": [
+    {
+      "filename": "SlotSunrise.png",
+      "idiom": "universal",
+      "scale": "1x"
+    },
+    {
+      "idiom": "universal",
+      "scale": "2x"
+    },
+    {
+      "idiom": "universal",
+      "scale": "3x"
+    }
+  ],
+  "info": {
+    "author": "xcode",
+    "version": 1,
+    "comment": "Watercolor children's picture-book illustration, soft bleeding edges, bright saturated. A sunrise cereal bowl overflowing with berries, golden oats and a jelly sun rising behind it, warm orange-pink sky wash. No text, no letters, no watermark."
+  }
+}

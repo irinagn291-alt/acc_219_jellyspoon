@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.00" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MealPg" customModule="JellySpoon" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="root" id="oview"/>
+                <outlet property="bgArt" destination="bg" id="obgArt"/>
+                <outlet property="titleLbl" destination="ttl" id="otitleLbl"/>
+                <outlet property="kcalLbl" destination="kcal" id="okcalLbl"/>
+                <outlet property="protLbl" destination="prot" id="oprotLbl"/>
+                <outlet property="carbLbl" destination="carb" id="ocarbLbl"/>
+                <outlet property="fatLbl" destination="fat" id="ofatLbl"/>
+                <outlet property="slotBox" destination="slots" id="oslotBox"/>
+                <outlet property="seekBtn" destination="seek" id="oseekBtn"/>
+                <outlet property="scanBtn" destination="scan" id="oscanBtn"/>
+                <outlet property="hintLbl" destination="hint" id="ohintLbl"/>
+                <outlet property="macroCard" destination="card" id="omacroCard"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="root">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sc">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="body">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="700"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="bg">
+                                    <rect key="frame" x="16" y="8" width="358" height="148"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="148" id="bgh"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today bowl" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="1" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ttl">
+                                    <rect key="frame" x="16" y="168" width="358" height="32"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="card">
+                                    <rect key="frame" x="16" y="208" width="358" height="120"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kcal" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="1" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kcal">
+                                            <rect key="frame" x="12" y="12" width="334" height="28"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="horizontal" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="macros">
+                                            <rect key="frame" x="12" y="48" width="334" height="60"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="p" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="prot">
+                                                    <rect key="frame" x="0" y="0" width="106" height="60"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="c" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="carb">
+                                                    <rect key="frame" x="114" y="0" width="106" height="60"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="f" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="fat">
+                                                    <rect key="frame" x="228" y="0" width="106" height="60"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="0.94" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="kcal" firstAttribute="top" secondItem="card" secondAttribute="top" constant="12" id="c1"/>
+                                        <constraint firstItem="kcal" firstAttribute="leading" secondItem="card" secondAttribute="leading" constant="12" id="c2"/>
+                                        <constraint firstAttribute="trailing" secondItem="kcal" secondAttribute="trailing" constant="12" id="c3"/>
+                                        <constraint firstItem="macros" firstAttribute="top" secondItem="kcal" secondAttribute="bottom" constant="8" id="c4"/>
+                                        <constraint firstItem="macros" firstAttribute="leading" secondItem="kcal" secondAttribute="leading" id="c5"/>
+                                        <constraint firstItem="macros" firstAttribute="trailing" secondItem="kcal" secondAttribute="trailing" id="c6"/>
+                                        <constraint firstAttribute="bottom" secondItem="macros" secondAttribute="bottom" constant="12" id="c7"/>
+                                        <constraint firstItem="macros" firstAttribute="height" relation="greaterThanOrEqual" constant="52" id="c8"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="horizontal" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="slots">
+                                    <rect key="frame" x="16" y="344" width="358" height="96"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="96" id="slh"/>
+                                    </constraints>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seek">
+                                    <rect key="frame" x="16" y="456" width="171" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="seekh"/>
+                                    </constraints>
+                                    <state key="normal" title="Seek"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scan">
+                                    <rect key="frame" x="199" y="456" width="171" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="scanh"/>
+                                    </constraints>
+                                    <state key="normal" title="Scan"/>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hint" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="hint">
+                                    <rect key="frame" x="16" y="516" width="358" height="20"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="bg" firstAttribute="top" secondItem="body" secondAttribute="top" constant="8" id="m1"/>
+                                <constraint firstItem="bg" firstAttribute="leading" secondItem="body" secondAttribute="leading" constant="16" id="m2"/>
+                                <constraint firstAttribute="trailing" secondItem="bg" secondAttribute="trailing" constant="16" id="m3"/>
+                                <constraint firstItem="ttl" firstAttribute="top" secondItem="bg" secondAttribute="bottom" constant="12" id="m4"/>
+                                <constraint firstItem="ttl" firstAttribute="leading" secondItem="bg" secondAttribute="leading" id="m5"/>
+                                <constraint firstItem="ttl" firstAttribute="trailing" secondItem="bg" secondAttribute="trailing" id="m6"/>
+                                <constraint firstItem="card" firstAttribute="top" secondItem="ttl" secondAttribute="bottom" constant="10" id="m7"/>
+                                <constraint firstItem="card" firstAttribute="leading" secondItem="bg" secondAttribute="leading" id="m8"/>
+                                <constraint firstItem="card" firstAttribute="trailing" secondItem="bg" secondAttribute="trailing" id="m9"/>
+                                <constraint firstItem="slots" firstAttribute="top" secondItem="card" secondAttribute="bottom" constant="12" id="m10"/>
+                                <constraint firstItem="slots" firstAttribute="leading" secondItem="bg" secondAttribute="leading" id="m11"/>
+                                <constraint firstItem="slots" firstAttribute="trailing" secondItem="bg" secondAttribute="trailing" id="m12"/>
+                                <constraint firstItem="seek" firstAttribute="top" secondItem="slots" secondAttribute="bottom" constant="14" id="m13"/>
+                                <constraint firstItem="seek" firstAttribute="leading" secondItem="bg" secondAttribute="leading" id="m14"/>
+                                <constraint firstItem="scan" firstAttribute="leading" secondItem="seek" secondAttribute="trailing" constant="10" id="m15"/>
+                                <constraint firstItem="scan" firstAttribute="trailing" secondItem="bg" secondAttribute="trailing" id="m16"/>
+                                <constraint firstItem="seek" firstAttribute="width" secondItem="scan" secondAttribute="width" id="m17"/>
+                                <constraint firstItem="scan" firstAttribute="centerY" secondItem="seek" secondAttribute="centerY" id="m18"/>
+                                <constraint firstItem="hint" firstAttribute="top" secondItem="seek" secondAttribute="bottom" constant="10" id="m19"/>
+                                <constraint firstItem="hint" firstAttribute="leading" secondItem="bg" secondAttribute="leading" id="m20"/>
+                                <constraint firstItem="hint" firstAttribute="trailing" secondItem="bg" secondAttribute="trailing" id="m21"/>
+                                <constraint firstAttribute="bottom" secondItem="hint" secondAttribute="bottom" constant="16" id="m22"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="scSafe"/>
+                    <viewLayoutGuide key="contentLayoutGuide" id="scC"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="scF"/>
+                    <constraints>
+                        <constraint firstItem="body" firstAttribute="top" secondItem="scC" secondAttribute="top" id="s1"/>
+                        <constraint firstItem="body" firstAttribute="leading" secondItem="scC" secondAttribute="leading" id="s2"/>
+                        <constraint firstItem="body" firstAttribute="trailing" secondItem="scC" secondAttribute="trailing" id="s3"/>
+                        <constraint firstItem="body" firstAttribute="bottom" secondItem="scC" secondAttribute="bottom" id="s4"/>
+                        <constraint firstItem="body" firstAttribute="width" secondItem="scF" secondAttribute="width" id="s5"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="safe"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="sc" firstAttribute="top" secondItem="safe" secondAttribute="top" id="r1"/>
+                <constraint firstItem="sc" firstAttribute="leading" secondItem="root" secondAttribute="leading" id="r2"/>
+                <constraint firstItem="sc" firstAttribute="trailing" secondItem="root" secondAttribute="trailing" id="r3"/>
+                <constraint firstItem="sc" firstAttribute="bottom" secondItem="safe" secondAttribute="bottom" id="r4"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

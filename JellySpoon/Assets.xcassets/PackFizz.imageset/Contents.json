@@ -1,0 +1,22 @@
+{
+  "images": [
+    {
+      "filename": "PackFizz.png",
+      "idiom": "universal",
+      "scale": "1x"
+    },
+    {
+      "idiom": "universal",
+      "scale": "2x"
+    },
+    {
+      "idiom": "universal",
+      "scale": "3x"
+    }
+  ],
+  "info": {
+    "author": "xcode",
+    "version": 1,
+    "comment": "Watercolor children's picture-book illustration, soft bleeding edges, bright saturated. A fizzy lemon soda bottle with bubbles like balloons, citrus twist hat, bright yellow-lime glass. No text, no letters, no watermark."
+  }
+}

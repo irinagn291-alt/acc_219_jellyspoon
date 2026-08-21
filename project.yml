@@ -1,0 +1,63 @@
+name: JellySpoon
+options:
+  bundleIdPrefix: com.jellyspoon
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: false
+settings:
+  base:
+    SWIFT_VERSION: "6.2"
+    IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+packages:
+  Alamofire:
+    url: https://github.com/wrandecima-bit/Alamofire
+    branch: master
+schemes:
+  JellySpoon:
+    build:
+      targets:
+        JellySpoon: all
+        JellySpoonTests: [test]
+    test:
+      targets:
+        - JellySpoonTests
+targets:
+  JellySpoon:
+    type: application
+    platform: iOS
+    sources:
+      - path: JellySpoon
+    dependencies:
+      - package: Alamofire
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.jellyspoon.kitchen
+        PRODUCT_NAME: JellySpoon
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_FILE: JellySpoon/Info.plist
+        INFOPLIST_KEY_CFBundleDisplayName: JellySpoon
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        INFOPLIST_KEY_UIUserInterfaceStyle: Light
+        INFOPLIST_KEY_NSCameraUsageDescription: JellySpoon peeks at the packet barcode so the kitchen can log a scoop.
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.healthcare-fitness
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        TARGETED_DEVICE_FAMILY: "1"
+        CURRENT_PROJECT_VERSION: 1
+        MARKETING_VERSION: "1.0.0"
+        SWIFT_STRICT_CONCURRENCY: complete
+        SWIFT_VERSION: "6.2"
+        CODE_SIGN_STYLE: Automatic
+  JellySpoonTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: JellySpoonTests
+    dependencies:
+      - target: JellySpoon
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.jellyspoon.kitchen.tests
+        IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+        SWIFT_VERSION: "6.2"
+        SWIFT_STRICT_CONCURRENCY: complete

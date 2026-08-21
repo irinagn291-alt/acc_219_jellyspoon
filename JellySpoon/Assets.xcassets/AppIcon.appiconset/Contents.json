@@ -1,0 +1,15 @@
+{
+  "images": [
+    {
+      "filename": "AppIcon.png",
+      "idiom": "universal",
+      "platform": "ios",
+      "size": "1024x1024"
+    }
+  ],
+  "info": {
+    "author": "xcode",
+    "version": 1,
+    "comment": "Watercolor children's picture-book illustration, soft wet bleeding edges, bright saturated candy colors, playful cartoon. A chubby smiling wooden spoon dripping glossy strawberry jelly, perched in a sunny yellow bowl, centered on a mint-cream wash. Soft paper grain, no text, no letters, no watermark, no logo."
+  }
+}

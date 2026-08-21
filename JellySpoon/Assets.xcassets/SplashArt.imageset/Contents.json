@@ -1,0 +1,22 @@
+{
+  "images": [
+    {
+      "filename": "SplashArt.png",
+      "idiom": "universal",
+      "scale": "1x"
+    },
+    {
+      "idiom": "universal",
+      "scale": "2x"
+    },
+    {
+      "idiom": "universal",
+      "scale": "3x"
+    }
+  ],
+  "info": {
+    "author": "xcode",
+    "version": 1,
+    "comment": "Watercolor children's picture-book illustration, soft wet bleeding edges, bright saturated candy colors. A whole cartoon kitchen table at morning: smiling wooden spoon character waving, glass jelly jars in pink yellow teal, crumbs and berries, warm window light. Soft paper tooth, no text, no letters, no watermark."
+  }
+}
