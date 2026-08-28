@@ -1,0 +1,13 @@
+The only permission usage string in the build settings is NSCameraUsageDescription: "JellySpoon peeks at the packet barcode so the kitchen can log a scoop." iOS shows that prompt when Scan a pack starts the camera session. There is no photo library, microphone, location, contacts, or tracking usage string.
+
+There is no login, no in-app purchase, no public user-generated content, no account deletion flow, and no App Tracking Transparency prompt.
+
+JellySpoon is a personal food kitchen for people who want to log scoops, compare them with Aims, and park a Picnic plan. It is not a medical device and does not require an account.
+
+No credentials or demo account are needed. Cold launch shows a short spinner. If the native kitchen appears, first launch presents four onboarding cards (Hey kitchen, Five kitchen pages, Peek a pack, Friendly taps). Tap Next, then Open the kitchen. First launch also seeds sample scoops and Wish jars so Today bowl and Bites are not empty. From Today bowl, tap Seek a jar, choose a Local shelf item or search Open Food Facts with Name a food, set grams on Jar card, tap Pick a slot, choose Spoon it now or Park on plan, then Park this scoop. Scan a pack is the barcode path, with Manual EAN and Use these digits if the camera is unavailable. Open Bites, Plan, Wish, or Aims from the top tabs. On Aims, Save aims, toggle High contrast kitchen, or tap Contact Us. Swipe Drop on a row to remove it.
+
+On launch the app POSTs bundle identifier com.jellyspoon.kitchen and an empty push token to https://jelly-scoop-ladle.pro/api/v1/users/register. If that call returns a content URL, the app opens it in a WebView and may restore that URL on later launches. If there is no content URL, or after about 4.8 seconds with no result, the native kitchen is shown. Seek a jar and Scan a pack call Open Food Facts at https://world.openfoodfacts.org/cgi/search.pl and https://world.openfoodfacts.org/api/v2/product. Contact Us loads https://jelly-scoop-ladle.pro/contact-us. Scoops, Wish jars, Aims, the high-contrast flag, and onboarding completion stay on device in UserDefaults and Documents/jelly_log.plist. Camera frames are not saved.
+
+Behavior does not change by country or App Store region. Plan dates use the device locale for display; stored day keys are Gregorian yyyy-MM-dd.
+
+No medical, food-service, or other regulated-industry licence applies. This is a personal scoop log that reads public Open Food Facts product data and does not diagnose, treat, or sell food.

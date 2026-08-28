@@ -1,0 +1,1 @@
+food,calories,macros,barcode,scan,meal,plan,protein,carbs,fat,nutrition,diary,picnic,scoop,kitchen

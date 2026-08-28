@@ -1,0 +1,14 @@
+JellySpoon is a swipeable kitchen for logging scoops of food. It is for anyone who wants a local calorie and macro diary with a picnic plan.
+
+• Five kitchen pages with tabs Today, Bites, Plan, Wish, and Aims. Swipe between them.
+• Today bowl shows today's kcal, Protein, Carbs, and Fat against Aims, plus kcal for Sunrise bowl, Lunch picnic, Supper pot, and Treat.
+• Seek a jar lists the Local shelf and can search Open Food Facts by name.
+• Scan a pack reads a barcode with the camera or accepts a Manual EAN.
+• Jar card shows per-100 g values and scales a 20-400 g scoop.
+• Assign lets you Spoon it now into today's Bites (Treat allowed) or Park on plan for Sunrise bowl, Lunch picnic, or Supper pot on one of the next seven days. Treat stays off the plan.
+• Bites today and Picnic plan list scoops. Swipe Drop to remove one.
+• Wish this jar saves a product to Wish jars.
+• Aims lets you Save aims for kcal, protein, carbs, and fat, turn on High contrast kitchen, and open Contact Us.
+• Local shelf: Berry oats jar, Sunny egg pair, Picnic cheese wedge, Garden pot soup, Crunch apple, Cocoa puff cloud, Jelly toast slice, Lemon fizz bottle.
+
+Scoops, Wish jars, and Aims stay on this device. Product lookup uses Open Food Facts.
