@@ -50,8 +50,9 @@ final class ScanVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         if sess.isRunning {
-            DispatchQueue.global(qos: .userInitiated).async { [sess] in
-                sess.stopRunning()
+            let box = SendableCapture(sess)
+            DispatchQueue.global(qos: .userInitiated).async {
+                box.sess.stopRunning()
             }
         }
     }
@@ -84,8 +85,9 @@ final class ScanVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         previewLayer.videoGravity = .resizeAspectFill
         preview.layer.addSublayer(previewLayer)
         layer = previewLayer
-        DispatchQueue.global(qos: .userInitiated).async { [sess] in
-            sess.startRunning()
+        let box = SendableCapture(sess)
+        DispatchQueue.global(qos: .userInitiated).async {
+            box.sess.startRunning()
         }
     }
 
@@ -108,4 +110,9 @@ final class ScanVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         a.addAction(UIAlertAction(title: "OK", style: .default))
         present(a, animated: true)
     }
+}
+
+private struct SendableCapture: @unchecked Sendable {
+    let sess: AVCaptureSession
+    init(_ sess: AVCaptureSession) { self.sess = sess }
 }
