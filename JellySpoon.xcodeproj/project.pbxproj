@@ -102,7 +102,7 @@
 		A37B5C353FFA28BF8BB95597 /* MealPg.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MealPg.xib; sourceTree = "<group>"; };
 		A42EF78F2D5E08CF3326037F /* DayCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayCard.xib; sourceTree = "<group>"; };
 		B13FBD176D35895D09ABD9C3 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
-		B7B8A5E10F3C6FA6D61E639B /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		B7B8A5E10F3C6FA6D61E639B /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		BB3B7469BB4BD2A7D2F3AFC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD10CA4F92BC5758BC13B1D0 /* ItemPr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPr.swift; sourceTree = "<group>"; };
 		C3194C66A6DEDA9C0E30948A /* WishPr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishPr.swift; sourceTree = "<group>"; };
@@ -112,10 +112,10 @@
 		C94D4D97911693158AA6B090 /* PlanPr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanPr.swift; sourceTree = "<group>"; };
 		D03AA33D16943A3588108897 /* BootCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BootCard.xib; sourceTree = "<group>"; };
 		DBE1A47D9785C469742F5CFB /* BootCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BootCard.swift; sourceTree = "<group>"; };
-		DC4460F4EB7498F5E28D81E3 /* JellySpoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JellySpoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC4460F4EB7498F5E28D81E3 /* JellySpoon.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = JellySpoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E069C34012CBE8BCABA0B2B9 /* OffNet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffNet.swift; sourceTree = "<group>"; };
 		E5D751EFAE678B9C8A2BF190 /* SeekPr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeekPr.swift; sourceTree = "<group>"; };
-		E70933BC3ABFA39F32EB407C /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		E70933BC3ABFA39F32EB407C /* LICENSE */ = {isa = PBXFileReference; path = LICENSE; sourceTree = "<group>"; };
 		E79F74853AE23291EE8748A2 /* ScanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanVC.swift; sourceTree = "<group>"; };
 		E7BE32C30D43421D52EADA01 /* PageHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageHost.swift; sourceTree = "<group>"; };
 		ED4B154573CDBD33C7752BA5 /* ScoopPrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoopPrTests.swift; sourceTree = "<group>"; };
@@ -295,7 +295,7 @@
 			mainGroup = 77032565D4605AF43DBF546B;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				22B3BCE8E6C1F60A2169C65F /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F471E8649DA9D5CBDA5786EC /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2383685F157E750912B23150 /* Products */;
@@ -397,21 +397,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = JellySpoon/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = JellySpoon;
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_NSCameraUsageDescription = "JellySpoon peeks at the packet barcode so the kitchen can log a scoop.";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jellyspoon.kitchen;
 				PRODUCT_NAME = JellySpoon;
 				SDKROOT = iphoneos;
@@ -483,21 +482,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = JellySpoon/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = JellySpoon;
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_NSCameraUsageDescription = "JellySpoon peeks at the packet barcode so the kitchen can log a scoop.";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jellyspoon.kitchen;
 				PRODUCT_NAME = JellySpoon;
 				SDKROOT = iphoneos;
@@ -643,12 +641,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		22B3BCE8E6C1F60A2169C65F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		F471E8649DA9D5CBDA5786EC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/wrandecima-bit/Alamofire";
+			repositoryURL = "https://github.com/ymvmj7dsyy-stack/Alamofire";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = revision;
+				revision = 8a974e1e0961fe3134df593e2d7d67db3d4c2ad3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -656,7 +654,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		8A929D939134F04E3E7BFD33 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 22B3BCE8E6C1F60A2169C65F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = F471E8649DA9D5CBDA5786EC /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
