@@ -37,7 +37,8 @@ targets:
         INFOPLIST_FILE: JellySpoon/Info.plist
         INFOPLIST_KEY_CFBundleDisplayName: JellySpoon
         INFOPLIST_KEY_ITSAppUsesNonExemptEncryption: NO
-        INFOPLIST_KEY_UISupportedInterfaceOrientations: "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
         INFOPLIST_KEY_UIUserInterfaceStyle: Light
         INFOPLIST_KEY_NSCameraUsageDescription: JellySpoon peeks at the packet barcode so the kitchen can log a scoop.
         INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.healthcare-fitness
