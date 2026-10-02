@@ -4,10 +4,9 @@
     {
       "identity" : "alamofire",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/wrandecima-bit/Alamofire",
+      "location" : "https://github.com/ymvmj7dsyy-stack/Alamofire",
       "state" : {
-        "branch" : "master",
-        "revision" : "7fdd403089757be2ce6991b287c7bef612c8bd04"
+        "revision" : "8a974e1e0961fe3134df593e2d7d67db3d4c2ad3"
       }
     }
   ],
